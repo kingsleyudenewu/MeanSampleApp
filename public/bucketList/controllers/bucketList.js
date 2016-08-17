@@ -11,7 +11,7 @@ angular.module('mean.bucketList').controller('BucketListController', ['$scope', 
         bucketList.$save(function(response) {
             $location.path('/bucketList');
         });
-    };
+    };   
 
     $scope.getAllBucketList = function() {
         BucketList.query(function(bucketList) {
